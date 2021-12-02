@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
+		em{
+			font-weight: bold;
+			color: seagreen;
+		}
+		#Title{
+			background-color: skyblue;
+		}
+		#Title2{
+			background-color: lightyellow; font-family: comic sans ms;
+		}
+	</style>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>110306072_HW2</title>
+</head>
+	<body>
+	<table border="1" style="width:50%">
+		<form>
+		<tr>
+			<th colspan="3" id="Title" style="font-family: sans-serif;">About--110306072</th>
+		</tr>
+		<tr>
+			<td rowspan="3">
+				<img src="40228.jpg" width="250">
+				<p>Personal Photo</p>
+			</td>
+			<td colspan="2">
+				<label><em>Name:</em></label>
+				<input type="text" name="name" size="25" maxlength="30"><br>
+				<label id="Title">Gender:</label>
+				<input type="radio" name="Gender" value="Male">Male
+				<input type="radio" name="Gender" value="Female">Female
+				<input type="radio" name="Gender" value="Other">Other<br>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<em><label>County:</label></em>
+				<select name="County">
+				<option value="Taipei">Taipei</option>
+				<option value="Taichung">Taichung</option>
+				<option value="Tainan">Tainan</option>
+				</select>
+			</td>
+			<td>
+				<em><label>Birthday:</label></em>
+				<input type="date" name="date">
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" id="Title">
+				E-mail:<input type="E-mail" name="E-mail" size="40">
+			</td>
+		</tr>
+		<tr>
+			<td id="Title2" style="background: darkolivegreen; color: lightgray;">Hobby</td>
+			<td colspan="2">
+				<input type="checkbox" name="What" value="Swimming">Swimming
+				<input type="checkbox" name="What" value="Movie">Movie
+				<input type="checkbox" name="What" value="Other">Other
+			</td>
+		</tr>
+		<tr>
+			<td><em>Skill</em></td>
+			<td colspan="2" id="Title2">
+				<input type="checkbox" name="What" value="Java">Java
+				<input type="checkbox" name="What" value="Microsoft">Micrsoft
+				<input type="checkbox" name="What" value="HTML">HTML
+			</td>
+		</tr>
+		<tr>
+			<td id="Title2">Say Something</td>
+			<td colspan="2">
+				<textarea rows="4" cols="50" placeholder="Say Something:"></textarea>
+			</td>
+		</tr>
+		<th colspan="3">
+			<input type="submit" value="Submit">
+			<input type="reset" value="Clear">
+		</th>
+	</form>
+	</body>
+</html>
